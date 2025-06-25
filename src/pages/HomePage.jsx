@@ -58,7 +58,7 @@ const HomePage = () => {
                 Comprehensive life insurance solutions and lucrative agent opportunities.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/bima-sakhi">
+                <Link to="/client-services">
                   <Button className="btn-primary text-lg px-8 py-4 w-full sm:w-auto">
                     Bima Sakhi Yojana
                   </Button>
