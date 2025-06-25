@@ -1,0 +1,107 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --lic-blue: #1e40af;
+  --lic-light-blue: #3b82f6;
+  --lic-dark-blue: #1e3a8a;
+  --lic-accent: #f59e0b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--lic-blue) 0%, var(--lic-light-blue) 100%);
+}
+
+.hero-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--lic-blue) 0%, var(--lic-light-blue) 100%);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+}
+
+.btn-secondary {
+  background: white;
+  color: var(--lic-blue);
+  border: 2px solid var(--lic-blue);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--lic-blue);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+}
